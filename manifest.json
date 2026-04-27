@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube ドラフト一括公開",
+  "version": "1.0",
+  "description": "YouTube Studioのドラフト動画を一括で公開設定に変更します",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["https://studio.youtube.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
