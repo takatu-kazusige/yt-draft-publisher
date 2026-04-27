@@ -133,8 +133,10 @@ async function runPublisher(visibility, madeForKids) {
   let count = 0;
 
   while (true) {
-    const draftBtn = document.querySelector(DRAFT_BTN_SELECTOR);
-    if (!draftBtn) break;
+    // ドラフトボタンを全取得して末尾のものをクリック
+    const draftBtns = document.querySelectorAll(DRAFT_BTN_SELECTOR);
+    if (!draftBtns.length) break;
+    const draftBtn = draftBtns[draftBtns.length - 1];
 
     draftBtn.click();
     await sleep(3500);
